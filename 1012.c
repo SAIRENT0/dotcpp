@@ -16,22 +16,17 @@ aklsjflj123 sadf918u324 asdf91u32oasdf/.';123
 
 int main(void)
 {
-	int letters = 0, numbers = 0, spaces = 0, other = 0;
-	char ch;
+	int letters = 0, numbers = 0, spaces = 0, other = 0, ret;
 
-	while(1)
+	while((ret = getchar()) != '\n')
 	{
-		ch = getchar();
-		if(ch == '\n')
-			break;
-
-		if((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+		if((ret >= 'A' && ret <= 'Z') || (ret >= 'a' && ret <= 'z'))
 			letters++;
 
-		else if(ch >= '0' && ch <= '9')
+		else if(ret >= '0' && ret <= '9')
 			numbers++;
 
-		else if(ch == ' ')
+		else if(ret == ' ')
 			spaces++;
 
 		else
