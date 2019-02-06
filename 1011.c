@@ -11,6 +11,31 @@
 //样例输出
 1 35
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+	int m, n, i, j;
+	//i -> 最大公约数
+	//j -> 最小公倍数
+	scanf("%d%d", &m, &n);
+
+	for(i = m < n ? m : n; i > 0; i--)
+	{
+		if(m%i == 0 && n%i == 0)
+		{
+			j = m*n / i;
+			printf("%d %d\n", i, j);
+			break;
+		}
+	}
+
+   return 0;
+}
+
+////////////////////////////////////////////////////////////
+
 #include <stdio.h>
 
 int main(void)
