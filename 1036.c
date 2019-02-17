@@ -15,8 +15,8 @@
 #include<stdio.h>
 
 #define REVERSION(a, b) a = a + b; 	\
-								        b = a - b; 	\
-								        a = a - b; 	\
+			b = a - b; 	\
+			a = a - b; 	\
 
 int main(void)
 {
