@@ -23,8 +23,8 @@ int main(void)
 	scanf("%d%d%d", &a, &b, &c);
 
 	printf("%d %d %d\n", a < b ? (a<c?a:     c     ) : (b<c?b:     c     ), 
-								a < b ? (a>c?a:((c<b?c:b))) :	(b>c?b:((c<a?c:a))), 		
-								a > b ? (a>c?a:     c     ) : (b>c?b:     c     ));
+			     a < b ? (a>c?a:((c<b?c:b))) : (b>c?b:((c<a?c:a))), 		
+			     a > b ? (a>c?a:     c     ) : (b>c?b:     c     ));
 
 	return 0;
 }
